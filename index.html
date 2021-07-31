@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Criar um formulário para Reserva de Hotel
+
+- Nome
+
+- Telefone
+
+- Data Chegada
+
+- Data Saída
+
+- Tipo de Quarto: Single (R$ 139,00), Double(R$ 220,00), Triplo(R$ 340,00)
+
+- Número Crianças menores de 5 anos(cada criança adicional custa R$ 30,00 a mais por noite) máximo de 4 hóspedes
+
+Efetuar o cálculo e apresentar ao usuário -->
+
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Cadastro de viagem</legend>
+              Nome: <input name="nome"  type="text"> 
+              <br/><br/>
+              Telefone: <input name="telefone"  type="text"> 
+              <br/><br/>
+              Tipo de quarto:
+              <input type="radio" name="tipo" value="139" > Single(R$ 139,00)
+              <input type="radio" name="tipo" value="220" > Double(R$ 220,00)
+              <input type="radio" name="tipo" value="340" > Triple(R$ 340,00)
+              <br/><br/>
+              Data Chegada: 
+              <input id="data-chegada" type="date">
+              <br/><br/>
+              Data Saída:
+              <input id="data-saida" type="date">
+              <br/><br/>
+              Número de Criança: <input name="crianca"  type="number" min="0" max="4"> 
+              <br/><br/>
+              <button onclick="calcular()">Calcular</button>
+              <p>Valor Total: <span id="total"></span> </p>
+        </fieldset>
+    </form>
+
+    <script type="text/javascript" src="script.js">
+
+        
+        
+
+
+        
+
+    </script>
+    
+</body>
+</html>
